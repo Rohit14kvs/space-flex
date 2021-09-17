@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0A81AB;
+    color: #fff;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    font-family: 'Nasalization', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav #logo {
+    margin-right: 1rem;
+}
+
+nav h2 {
+    font-size: 2rem;
+}
+
+.picture-card {
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  padding: 2rem 0rem;
+  width: 90%;
+  margin: auto;
+  column-gap: 4rem;
+}
+
+.img-sec {
+    border: 2px solid #000;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+}
+
+.img-sec .img-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+}
+
+.img-sec .img-info .img-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.img-sec .img-desc {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.picture-card img {
+    width: 100%;
+    height: 50%;
+    object-fit:fill;
+    border-radius: 1.5rem;
+}
+
+.more {
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.more button {
+    font-family: 'Nasalization', sans-serif;
+    border: 3px solid #0A81AB;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0A81AB;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.more button:hover {
+    color: #fff;
+    background: #0A81AB;
+}
