@@ -99,7 +99,7 @@ nav h2 {
     display: flex;
     height: 15vh;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 .more button {
@@ -135,7 +135,7 @@ nav h2 {
     border: 2px solid #2C394B;
     padding: 0.5rem 0.7rem;
     border-radius: 0.5rem;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     transition: all 0.2s ease-in-out;
 }
 
