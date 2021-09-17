@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: #f2f2f2;
 }
 
 header {
@@ -39,7 +40,7 @@ nav h2 {
 
 .picture-card {
     display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   padding: 2rem 0rem;
   width: 90%;
   margin: auto;
@@ -47,11 +48,13 @@ nav h2 {
 }
 
 .img-sec {
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
+    box-shadow: 0 0 20px 8px #d0d0d0;
     padding: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem ;
     border-radius: 1.5rem;
     overflow: scroll;
+    height: 95vh;
 }
 
 .img-sec::-webkit-scrollbar {
@@ -69,17 +72,20 @@ nav h2 {
 .img-sec .img-info .img-head {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     width: 100%;
-    margin: 0.5rem 0;
     padding: 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
+    color: #2C394B;
 }
 
 .img-sec .img-desc {
     font-size: 1rem;
     padding: 0.5rem;
+    padding-top: 0;
 }
 
 .picture-card img {
@@ -113,3 +119,51 @@ nav h2 {
     color: #fff;
     background: #0A81AB;
 }
+
+.img-info .img-btns {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-info .img-btns a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #2C394B;
+    background: #f2f2f2;
+    border: 2px solid #2C394B;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.img-info .img-btns a:hover {
+    background: #2C394B;
+    color: #fff;
+    border: 1px solid #2C394B;
+
+}
+
+.fas {
+    margin-left: 6px;
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    -webkit-transition: background-position 1s steps(28);
+    transition: background-position 1s steps(28);
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+  
+  .heart.is-active {
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    background-position: -2800px 0;
+  }
