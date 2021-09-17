@@ -149,6 +149,8 @@ nav h2 {
 }
 
 .heart-over {
+    font-size: 1.5rem;
+    cursor: pointer;
   color: #fe4164;
 }
 
