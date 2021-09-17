@@ -13,6 +13,9 @@ async function fetchAPI() {
   addPicture(data);
 }
 
+const a = document.querySelector('.heart');
+console.log(a);
+
 function addPicture(data) {
   for (let i = 0; i < data.length; i++) {
     const Img = document.createElement("div");
@@ -24,7 +27,7 @@ function addPicture(data) {
                 <div class="img-date">${data[i].date}</div>
                 </div>
                 <div class="img-btns">
-                <div class="heart" id ="hrt"></div>
+                <div class="heart" id="hrt"><i class="fas fa-heart"></i></div>
                 <div class="share"><a id="share-url" href=${data[i].url}>Share <i class="fas fa-location-arrow"></i></a></div>
                 </div>
                 <p class="img-desc">${data[i].explanation}</p>
@@ -33,14 +36,14 @@ function addPicture(data) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const heart = document.getElementsByClassName("heart");
-    console.log(heart);
-    heart.forEach(btn => {
-        btn.addEventListener("click", function() {
-            this.classList.toggle("is-active");
-          });
-    });
-});
+
+
+// document.getElementsByClassName('.heart').forEach(item => {
+//     console.log(item);
+//     item.addEventListener('click', () => {
+//         item.classList.add(".heart-over");
+//     })
+//   })
+
 
 fetchAPI();
