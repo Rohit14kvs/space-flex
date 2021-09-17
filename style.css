@@ -82,6 +82,11 @@ nav h2 {
     color: #2C394B;
 }
 
+.img-sec .img-info .img-head .img-date {
+    margin-top: 0.2rem;
+    font-weight: normal;
+}
+
 .img-sec .img-desc {
     font-size: 1rem;
     padding: 0.5rem;
