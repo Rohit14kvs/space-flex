@@ -271,7 +271,7 @@ nav h2 {
 
 @media screen and (max-width: 560px){  
   .img-sec {
-    width: 350px;
+    width: 380px;
   }
 }
 
@@ -279,7 +279,7 @@ nav h2 {
   .img-sec {
     height: 80vh;
     margin: 0rem 1.5rem 4rem 1.5rem;
-    width: 320px;
+    width: 350px;
   }
 }
 
@@ -287,7 +287,7 @@ nav h2 {
   .img-sec {
     height: 80vh;
     margin: 0rem 1.5rem 4rem 1.5rem;
-    width: 300px;
+    width: 320px;
   }
   .picture-card  {
     justify-content: center;
