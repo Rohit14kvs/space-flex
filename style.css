@@ -269,10 +269,19 @@ nav h2 {
   }
 }
 
+@media screen and (max-width: 540px){  
+  .img-sec {
+    height: 80vh;
+    margin: 0rem 1.5rem 4rem 1.5rem;
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 445px){
   .img-sec {
+    height: 80vh;
     margin: 0rem 1.5rem 4rem 1.5rem;
-    width: 350px;
+    width: 300px;
   }
   .picture-card  {
     justify-content: center;
