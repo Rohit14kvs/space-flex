@@ -8,7 +8,7 @@ async function fetchAPI() {
   const link = `https://api.nasa.gov/planetary/apod?api_key=${auth}&count=12`;
   const response = await fetch(link);
   const data = await response.json();
-//   console.log(data);
+  console.log(data);
   addPicture(data);
 
   const like = document.querySelectorAll(".fa-heart");
@@ -60,7 +60,7 @@ function addPicture(data) {
   for (let i = 0; i < data.length; i++) {
     const Img = document.createElement("div");
     Img.classList.add("img-sec");
-    Img.innerHTML = `<img src = ${data[i].hdurl}></img>
+    Img.innerHTML = `<img src = ${data[i].url} alt="Image not found" onerror="this.onerror=null;this.src='./NASA_logo.png';"></img>
                 <div class="img-info">
                 <div class="img-head">
                 <div class="img-title">${data[i].title}</div>
