@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0a81ab;
+  background: #222831;
   color: #fff;
   margin-bottom: 2rem;
 }
@@ -32,7 +32,13 @@ nav {
 }
 
 nav #logo {
-  margin-right: 1rem;
+  margin-right: 2rem;
+}
+
+nav img {
+  width: 60px;
+  height: 60px;
+
 }
 
 nav h2 {
@@ -141,10 +147,10 @@ nav h2 {
 
 .more button {
   font-family: "Nasalization", sans-serif;
-  border: 3px solid #0a81ab;
+  border: 3px solid #222831;
   font-size: 2rem;
   font-weight: bold;
-  color: #0a81ab;
+  color: #222831;
   background: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -154,7 +160,7 @@ nav h2 {
 
 .more button:hover {
   color: #fff;
-  background: #0a81ab;
+  background: #222831;
 }
 
 .img-info .img-btns {
