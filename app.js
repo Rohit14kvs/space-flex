@@ -13,11 +13,39 @@ async function fetchAPI() {
 
   const like = document.querySelectorAll(".fa-heart");
   const like_array = [...like];
+  const readMore = document.querySelectorAll(".read");
+  const readMore_array = [...readMore];
+  const content = document.querySelectorAll(".img-sec");
+  const content_array = [...content];
+  const imgDesc = document.querySelectorAll(".img-desc");
+  const imgDesc_array = [...imgDesc];
 
   for (let i = 0; i < like_array.length; i++) {
     like_array[i].addEventListener("click", () => {
       like_array[i].classList.toggle("heart-over");
       console.log(like_array[i]);
+    });
+  }
+
+  for (let i = 0; i < readMore_array.length; i++) {
+    readMore_array[i].addEventListener("click", () => {
+      readMore_array[i].classList.add("read-more-hover");
+      content_array[i].style.overflow = "scroll";
+    });
+  }
+
+  for (let i = 0; i < imgDesc_array.length; i++) {
+    imgDesc[i].addEventListener("mouseenter", () => {
+      readMore_array[i].classList.add("read-more");
+    });
+    readMore_array[i].addEventListener("mouseenter", () => {
+      readMore_array[i].classList.add("read-more");
+    });
+    readMore_array[i].addEventListener("mouseleave", () => {
+      readMore_array[i].classList.remove("read-more");
+    });
+    imgDesc[i].addEventListener("mouseleave", () => {
+      readMore_array[i].classList.toggle("read-more");
     });
   }
 }
@@ -47,6 +75,7 @@ function addPicture(data) {
                 <div class="share"><a id="share-url" onclick="copyToClipboard('${data[i].url}')">Share <i class="fas fa-location-arrow"></i></a></div>
                 </div>
                 <p class="img-desc">${data[i].explanation}</p>
+                <div class="read">Read More</div>
                 </div>`;
     imageCard.appendChild(Img);
   }

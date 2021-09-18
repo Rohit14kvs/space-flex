@@ -49,16 +49,13 @@ nav h2 {
 }
 
 .img-sec {
-  box-shadow: 0 0 20px 8px #d0d0d0;
-  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 19px 48px rgba(0,0,0,0.30), 0 15px 32px rgba(0,0,0,0.22);
+  background-color:#FFF;
   margin-bottom: 4rem;
-  border-radius: 1.5rem;
-  overflow: scroll;
+  border-radius:6px;
+  overflow: hidden;
   height: 95vh;
-}
-
-.img-sec::-webkit-scrollbar {
-  display: none;
 }
 
 .img-sec .img-info {
@@ -71,33 +68,68 @@ nav h2 {
 
 .img-sec .img-info .img-head {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
-  text-align: center;
-  flex-direction: column;
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   font-size: 1rem;
   font-weight: bold;
-  color: #2c394b;
+  color: rgba(43, 56, 74, 0.8);
+}
+
+.img-sec .img-info .img-head .img-title {
+  flex: 1;
+  text-align: left;
+  line-height: 1.3rem;
 }
 
 .img-sec .img-info .img-head .img-date {
-  margin-top: 0.2rem;
   font-weight: normal;
+  flex: 1;
+  text-align: right;
 }
 
 .img-sec .img-desc {
   font-size: 1rem;
-  padding: 0.5rem;
-  padding-top: 0;
+  padding: 0 1.2rem 1rem 1.2rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.read-more {
+  /* display: none; */
+  position: absolute;
+  bottom: 0;
+  padding: 0.7rem 1rem;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.read-more-hover {
+  display: none;
+}
+
+@keyframes wipe {
+  from  {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .picture-card img {
   width: 100%;
   height: 50%;
   object-fit: fill;
-  border-radius: 1.5rem;
 }
 
 .more {
@@ -130,13 +162,19 @@ nav h2 {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  margin: 1.5rem 0;
-  padding: 0 1rem;
+  margin: 1rem 0;
+  padding: 0 1.2rem;
+}
+
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-heart {
-  font-size: 1.5rem;
-  color: #f2f2f2;
+  font-size:1.7rem;
+  color: #fff;
   cursor: pointer;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fe4164;
@@ -149,7 +187,7 @@ nav h2 {
 }
 
 .heart-over {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     cursor: pointer;
   color: #fe4164;
 }
@@ -159,21 +197,20 @@ nav h2 {
 }
 
 .img-info .img-btns a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-decoration: none;
-  color: #2c394b;
-  background: #f2f2f2;
-  border: 2px solid #2c394b;
+  color: rgba(44, 57, 75, 0.7);
+  background: #fff;
+  border: 2px solid rgba(44, 57, 75, 0.7);
   padding: 0.5rem 0.7rem;
   border-radius: 0.5rem;
-  /* margin-right: 1.5rem; */
   transition: all 0.2s ease-in-out;
 }
 
 .img-info .img-btns a:hover {
-  background: #2c394b;
+  background: rgba(44, 57, 75, 0.7);
   color: #fff;
-  border: 1px solid #2c394b;
+  border: 1px solid rgba(44, 57, 75, 0.7);
 }
 
 .fa-location-arrow {
