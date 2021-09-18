@@ -269,11 +269,17 @@ nav h2 {
   }
 }
 
+@media screen and (max-width: 560px){  
+  .img-sec {
+    width: 350px;
+  }
+}
+
 @media screen and (max-width: 540px){  
   .img-sec {
     height: 80vh;
     margin: 0rem 1.5rem 4rem 1.5rem;
-    width: 300px;
+    width: 320px;
   }
 }
 
@@ -303,6 +309,10 @@ nav h2 {
 }
 
 @media screen and (max-width: 225px){
+  .img-sec {
+    height: 70vh;
+  }
+
   nav img {
     width: 25px;
     height: 25px;
@@ -319,10 +329,13 @@ nav h2 {
  }
 
  @media screen and (max-width: 179px){
+  .img-sec {
+    height: 70vh;
+  }
+
   nav img {
     width: 20px;
     height: 20px;
-  
   }
   
   nav h2 {
