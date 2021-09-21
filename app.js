@@ -8,7 +8,7 @@ async function fetchAPI() {
   const link = `https://api.nasa.gov/planetary/apod?api_key=${auth}&count=12`;
   const response = await fetch(link);
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   addPicture(data);
 
   const like = document.querySelectorAll(".fa-heart");
