@@ -251,6 +251,9 @@ nav h2 {
 }
 
 @media screen and (max-width:755px){
+  .img-sec {
+    height: 80vh;
+  }
   .picture-card {
     grid-template-columns: repeat(1, 300px);
     justify-content: center;    
