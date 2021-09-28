@@ -260,6 +260,12 @@ nav h2 {
   }
 }
 
+@media screen and (max-width:500px){
+  .img-sec {
+    height: 70vh;
+  }
+}
+
 @media screen and (max-width:330px){
   .picture-card {
     grid-template-columns: repeat(1, 230px);
